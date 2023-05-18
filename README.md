@@ -8,12 +8,12 @@ diferentes cidades.<br>
 ● Localização atual: O usuário pode optar por pegar sua atual
 localização.
 ## Usabilidade:
-O aplicativo possui uma interface bem intuitiva, sendo assim, o
+  O aplicativo possui uma interface bem intuitiva, sendo assim, o
 mesmo é capaz de ser utilizado por pessoas que vão desde os jovens que
 possuem grande contato com a tecnologia a até mesmo pessoas de mais
-idade que possuem baixo contato.
+idade que possuem baixo contato. <br>
 Ao pesquisar a localidade de preferência, o aplicativo se separa em
-três diferentes partes:
+três diferentes partes: <br>
 ● A primeira mostra o nome da localização pesquisada e o dia
 da semana, mostra também os dados climáticos atuais
 como:Temperatura atual,Temperatura mínima e
