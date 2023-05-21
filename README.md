@@ -75,8 +75,7 @@ As duas primeiras permissões possuem como objetivo possibilitar que o código f
 
 
 ### Bibliotecas:
-Na questão das bibliotecas utilizadas, 42 bibliotecas foram importadas, a grande maioria são padrões do próprio android studio, porém algumas bibliotecas são externas. Estas bibliotecas foram declaradas no arquivo “build.gradle” dentro de dependencies:<br>
-<br>
+Na questão das bibliotecas utilizadas, 42 bibliotecas foram importadas, a grande maioria são padrões do próprio android studio, porém algumas bibliotecas são externas. Estas bibliotecas foram declaradas no arquivo “build.gradle” dentro de dependencies:
 - Para as bibliotecas de localização<br>
 `implementation'com.google.android.gms:play-services-location:21.0.1'`<br>
 - Para as bibliotecas de JSON<br>
