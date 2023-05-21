@@ -1,6 +1,10 @@
 # Climating <br> 
 Aplicativo programado em java utilizando a IDE Android Studio.<br>
-Este aplicativo tem como objetivo proporcionar acesso rápido e fácil ao clima atual de milhares de cidades ao redor do mundo.
+Este aplicativo tem como objetivo proporcionar acesso rápido e fácil ao clima atual de milhares de cidades ao redor do mundo.<br>
+Os arquivos principais estão postados aqui separados do resto do projeto para uma fácil visualização e são eles:
+- <a href="https://github.com/dudrt/Climating/blob/main/MainActivity.java">MainActivity.java</a>
+- <a href="https://github.com/dudrt/Climating/blob/main/Conexao.java">Conexao.java</a><br>
+
 ## Funcionalidades do projeto:
 - `Pesquisa por cidade`: O usuário é capaz de fazer consultas a
 diferentes cidades.<br>
