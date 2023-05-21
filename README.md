@@ -36,7 +36,7 @@ Pensado como um instrumento que ajude a aumentar a usabilidade do aplicativo, ca
 ##### Parte da interface que mostra a localização das funcionalidades citadas a cima.
 <img src="img/tela_topo.png">
 
-Ideia Inicial X Produto Final:
+# Ideia Inicial X Produto Final:
 	
 No que se refere às diferenças da ideia inicial e do produto final, o principal foi as mudanças visuais e algumas poucas mudanças de funcionalidades.Para começar o projeto, foi pego um exemplo de interface.<br>
 Logo após, foi feito um esboço no figma, que pegou apenas como base algumas ideias do exemplo.<br>
@@ -48,3 +48,50 @@ Logo após, começou o desenvolvimento e durante o processo, algumas ideias muda
 <img src="img/teste1.png" height="300px"><img src="img/teste2.png" height="300px"><br>
 Depois de mudar alguns aspectos visuais como:Cor de fundo, cor das letras, posição dos ícones, posição das informações, informações adicionais e troca de informações, o visual final ficou bem diferente do inicialmente esperado.<br>
 <img src="img/ultima.png" height="300px"><img src="img/ultima2.png" height="300px"><br>
+
+
+# Desenvolvimento:
+### Tecnologias usadas:
+IDE: <a href="https://developer.android.com/studio?gclid=CjwKCAjwge2iBhBBEiwAfXDBR_u5cs4xN04gx0zhI1S2DpwHvndmX_SAuCc8uib4bt62yNvArqXtGRoCZIoQAvD_BwE&gclsrc=aw.ds">Android Studio</a>, Versão:11.0.15+0-b2043.56-9505619 amd64.<br>
+Linguagem: <a href="https://www.java.com/pt-BR/">Java<a/>.<br>
+API:<a href="https://www.java.com/pt-BR/">Visual Crossing<a/>.
+
+### Dificuldades Enfrentadas:
+Logo no começo do desenvolvimento, a primeira dificuldade foi fazer a conexão do aplicativo com a API de tempo. Devido as constantes atualizações do Android Studio, os comandos que executam a conexão mudaram nos últimos meses.Graças a quantidade de informação presente na internet, acabou demorando para que o código certo fosse encontrado e a requisição fosse feita de maneira correta.Outra dificuldade encontrada foi na questão de tratamento de dados. Ao fazer a requisição, a API me retorna uma String com a formatação JSON. A dificuldade foi devido a grande quantidade de informações presentes nesta resposta,  na média seu tamanho é de 140kB, pode parecer pouco,mas se colocarmos que cada caractere possui 1 byte, possuímos então, cerca de 140 mil caracteres de resposta em uma única requisição.
+	
+### Código:
+Por mais que este seja um projeto relativamente pequeno, falando de maneira técnica, o software em si possui diversas funcionalidades. Com quase 700 linhas, o código possui diversas bibliotecas importadas, funções, variáveis de conteúdo, variáveis de verificação, tratamento de exceções entre outros.
+
+# Documentação de código:
+
+### Permissões:
+Para que o aplicativo final funcione, ele necessita de conexão com a internet para que a requisição seja feita a API e para uma funcionalidade secundária, necessita da permissão para acessar a localização do dispositivo ,com isso, foi necessário adicionar algumas permissões no arquivo “AndroidManifest.xml”, as adições foram:<br>
+`<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>`<br>
+`<uses-permission android:name="android.permission.INTERNET"/>`<br>
+`<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />`<br>
+`<uses-permission android:name=android.permission.ACCESS_FINE_LOCATION/>`<br>
+	
+As duas primeiras permissões possuem como objetivo possibilitar que o código faça conexão com a internet e não necessita da confirmação do usuário. As duas últimas permissões possibilitam que o aplicativo pegue a posição geográfica em Longitude e Latitude do dispositivo, porém é necessário que o usuário tenha consentimento do mesmo e confirme sua permissão. 
+
+
+### Bibliotecas:
+Na questão das bibliotecas utilizadas, 42 bibliotecas foram importadas, a grande maioria são padrões do próprio android studio, porém algumas bibliotecas são externas. Estas bibliotecas foram declaradas no arquivo “build.gradle” dentro de dependencies:<br>
+<br>
+- Para as bibliotecas de localização<br>
+`implementation'com.google.android.gms:play-services-location:21.0.1'`<br>
+- Para as bibliotecas de JSON<br>
+`implementation 'org.apache.httpcomponents:httpcore:4.4.13'`<br>
+
+Com essas duas dependências inseridas no build, foi então capaz de importar as seguintes bibliotecas:
+- Estas bibliotecas servem para pegar a localização do dispositivo. <br>
+`import com.google.android.gms.tasks.OnFailureListener;`<br>
+`import com.google.android.gms.location.FusedLocationProviderClient;`<br>
+`import com.google.android.gms.location.LocationServices;`<br>
+- Estas bibliotecas servem para tratar a resposta da API que vem em formato JSON.<br>
+`import org.json.JSONArray;`<br>
+`import org.json.JSONException;`<br>
+`import org.json.JSONObject;`<br>
+
+# Código:
+ O projeto possui dois arquivos de códigos, um sendo “Conexao.java” que possui os comandos necessários para que seja feita a requisição para a API. O arquivo de código principal, possui toda a lógica necessária para que o aplicativo funcione e o mesmo está documentado por meio de comentários presentes no código.
+
