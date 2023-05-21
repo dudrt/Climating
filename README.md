@@ -23,30 +23,6 @@ O software não possui requisito de permissões para funcionamento, porém ao in
 localização atual apenas com o clique de um botão.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Utilização:
 
 O software possui duas principais funções, sendo elas:
@@ -60,4 +36,15 @@ Pensado como um instrumento que ajude a aumentar a usabilidade do aplicativo, ca
 ##### Parte da interface que mostra a localização das funcionalidades citadas a cima.
 <img src="img/tela_topo.png">
 
+Ideia Inicial X Produto Final:
+	
+No que se refere às diferenças da ideia inicial e do produto final, o principal foi as mudanças visuais e algumas poucas mudanças de funcionalidades.Para começar o projeto, foi pego um exemplo de interface.<br>
+Logo após, foi feito um esboço no figma, que pegou apenas como base algumas ideias do exemplo.<br>
 
+##### Exemplo de interface ------------------------------- Esboço feito no figma
+<img src="img/exemplo.jfif" height="300px"><img src="img/figma.png" height="300px"><br>
+Logo após, começou o desenvolvimento e durante o processo, algumas ideias mudaram e outras nasceram.<br>
+##### Fotos do processo de desenvolvimento.
+<img src="img/teste1.png" height="300px"><img src="img/teste2.png" height="300px"><br>
+Depois de mudar alguns aspectos visuais como:Cor de fundo, cor das letras, posição dos ícones, posição das informações, informações adicionais e troca de informações, o visual final ficou bem diferente do inicialmente esperado.<br>
+<img src="img/ultima.png" height="300px"><img src="img/ultima2.png" height="300px"><br>
